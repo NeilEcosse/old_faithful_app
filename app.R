@@ -15,16 +15,15 @@ ui <- fluidPage(
                         min = 1,
                         max = 50,
                         value = 30),
-            # ----
-            # ADD THIS - double ended range selector
-            # ----
+            
             sliderInput(inputId = "eruptionLength",
-                        label = "Eruption length (secs):",
+                        label = "Eruption length (mins):",
                         min = 0,
                         max = 10,
-                        value = c(1, 5),
-                        step = 0.25),
+                        value = c(3, 5),
+                        step = 0.5),
         ),
+        
         
         # Show a plot of the generated distribution
         mainPanel(
